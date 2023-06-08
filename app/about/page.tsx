@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Container>
       <div className="transition-opacity duration-500 ease-in-out opacity-0">
-        Hey
+        Hey About page
       </div>
     </Container>
   );
