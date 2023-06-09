@@ -11,6 +11,8 @@ import RegisterModal from "./components/modals/RegisterModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import Footer from "./components/footer/footer";
 
+import { headers } from "next/headers";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -35,21 +37,30 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const currentUser = await getCurrentUser();
-  return (
-    <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable}`}>
-        <ClientOnly>
-          <ToasterProvider />
-          <LoginModal />
-          <RegisterModal />
-          <Navbar currentUser={currentUser} />
-          <ChatWidget />
-        </ClientOnly>
-        <div className="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
-          {children}
-          <Footer />
-        </div>
-      </body>
-    </html>
-  );
+  const headersList = headers();
+  const header_url = headersList.get("x-url") || "";
+  console.log(header_url);
+  if (header_url === "http://localhost:3000/") {
+    return (
+      <html lang="en">
+        <body className={`${inter.variable} ${architects_daughter.variable}`}>
+          <ClientOnly>
+            <ToasterProvider />
+            <LoginModal />
+            <RegisterModal />
+            <Navbar currentUser={currentUser} />
+            <ChatWidget />
+          </ClientOnly>
+          <div className="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
+            {children}
+            <Footer />
+          </div>
+        </body>
+      </html>
+    );
+  } else return <div className="w-screen h-screen">{children}</div>;
+
+  // return (
+
+  // );
 }

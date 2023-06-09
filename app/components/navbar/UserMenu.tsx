@@ -32,12 +32,15 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
   const news = () => {
     router.push("/news");
+    toggleOpen()
   };
   const about = () => {
     router.push("/about");
+    toggleOpen()
   };
   const profile = () => {
     router.push("/profile");
+    toggleOpen()
   };
 
   const login = () => {
@@ -63,7 +66,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
-            <Avatar src="/images/placeholder.jpeg" />
+            <Avatar src={currentUser?.image} />
           </div>
         </div>
       </div>

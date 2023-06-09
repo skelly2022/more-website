@@ -45,7 +45,7 @@ const LoginModal = () => {
       setIsLoading(false);
       if (callback?.ok) {
         toast.success("Logged in");
-        router.refresh();
+        router.push("/dashboard");
         loginModal.onClose();
       }
       if (callback?.error) {
@@ -88,7 +88,11 @@ const LoginModal = () => {
         outline
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => signIn("google")}
+        onClick={() =>
+          signIn("google", {
+            callbackUrl: `${window.location.origin}/dashboard`,
+          })
+        }
       />
 
       <div className="text-neutral-500 text-center mt-4 font-light">

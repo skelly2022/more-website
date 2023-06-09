@@ -4,12 +4,15 @@ import Container from "../Container";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import { SafeUser } from "@/app/types";
+import { useSearchParams } from "next/navigation";
 
 interface NavbarProps {
   currentUser?: SafeUser | null;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
+  const searchParams = useSearchParams();
+  console.log(searchParams);
   return (
     <div className="fixed w-full  bg-gray-900 z-10 shadow-sm">
       <div className="py-4 ">
