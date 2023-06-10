@@ -39,7 +39,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
     toggleOpen()
   };
   const profile = () => {
-    router.push("/profile");
+    router.push("/dashboard");
     toggleOpen()
   };
 
@@ -75,7 +75,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           <div className="flex flex-col cursor-pointer text-black">
             {currentUser ? (
               <>
-                <MenuItem onClick={profile} label="Profile" />
+                <MenuItem onClick={profile} label="Dashboard" />
                 <MenuItem onClick={news} label="News" />
                 <MenuItem onClick={about} label="About" />
                 <MenuItem onClick={() => signOut()} label="Logout" />
