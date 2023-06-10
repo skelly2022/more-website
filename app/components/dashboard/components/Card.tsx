@@ -1,3 +1,5 @@
+'use client'
+
 const Card = () => {
   return (
     <div className="w-full sm:w-1/2 xl:w-1/3">
@@ -100,34 +102,6 @@ const Card = () => {
             </span>
           </div>
           <div className="flex -space-x-2">
-            <a href="#">
-              <img
-                className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-                src="/images/5.jpg"
-                alt="Guy"
-              />
-            </a>
-            <a href="#" className="">
-              <img
-                className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-                src="/images/6.jpg"
-                alt="Max"
-              />
-            </a>
-            <a href="#" className="">
-              <img
-                className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-                src="/images/7.jpg"
-                alt="Charles"
-              />
-            </a>
-            <a href="#" className="">
-              <img
-                className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-                src="/images/8.jpg"
-                alt="Jade"
-              />
-            </a>
           </div>
           <span className="px-2 py-1 flex w-36 mt-4 items-center text-xs rounded-md font-semibold text-yellow-500 bg-yellow-100">
             DUE DATE : 18 JUN

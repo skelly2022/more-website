@@ -66,7 +66,7 @@ const DashNav = () => {
                 <span className="font-normal mx-4 text-sm">Dashboard</span>
               </span>
             </a>
-            <a href="/admin/projects">
+            <a href="/">
               <span
                 className="duration-200 flex font-thin items-center justify-start my-2 p-4 transition-colors text-gray-500 uppercase w-full lg:hover:text-blue-500 
             false"
@@ -77,7 +77,7 @@ const DashNav = () => {
                 <span className="font-normal mx-4 text-sm">Houses</span>
               </span>
             </a>
-            <a href="/admin/tasks">
+            <a href="/">
               <span
                 className="duration-200 flex font-thin items-center justify-start my-2 p-4 transition-colors text-gray-500 uppercase w-full lg:hover:text-blue-500 
             false"
@@ -97,7 +97,7 @@ const DashNav = () => {
                 <span className="font-normal mx-4 text-sm">Map</span>
               </span>
             </a>
-            <a href="/admin/calendar">
+            <a href="/">
               <span
                 className="duration-200 flex font-thin items-center justify-start my-2 p-4 transition-colors text-gray-500 uppercase w-full lg:hover:text-blue-500 
             false"
@@ -117,7 +117,7 @@ const DashNav = () => {
                 <span className="font-normal mx-4 text-sm">Calendar</span>
               </span>
             </a>
-            <a href="/admin/settings">
+            <a href="/">
               <span
                 className="duration-200 flex font-thin items-center justify-start my-2 p-4 transition-colors text-gray-500 uppercase w-full lg:hover:text-blue-500 
             false"

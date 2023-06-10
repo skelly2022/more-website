@@ -13,8 +13,10 @@ import Input from "../inputs/Input";
 import { toast } from "react-hot-toast";
 import Button from "../reUseComponents/Button";
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const RegisterModal = () => {
+  const router = useRouter();
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const [isLoading, setIsLoading] = useState(false);
@@ -36,6 +38,7 @@ const RegisterModal = () => {
       .post("/api/register", data)
       .then(() => {
         toast.success("Account Created");
+        router.push("/dashboard");
         registerModal.onClose();
       })
       .catch((error) => {
@@ -88,7 +91,11 @@ const RegisterModal = () => {
         outline
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => signIn("google")}
+        onClick={() =>
+          signIn("google", {
+            callbackUrl: `${window.location.origin}/dashboard`,
+          })
+        }
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
