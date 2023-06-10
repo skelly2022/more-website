@@ -1,5 +1,7 @@
 "use client";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Hero from "../components/home/Hero";
 import Testimonials from "../components/home/Testimonials";
 import Zigzag from "../components/home/Zigzag";
@@ -7,13 +9,23 @@ import Newsletter from "../components/home/Newsletter";
 // import AosWrap from "../(default)/AosWrap";
 
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 600,
+      easing: "ease-out-sine",
+    });
+  });
   return (
-    <>
-      <Hero />
-      <Zigzag />
-      <Testimonials />
-      <Newsletter/>
-    </>
+    <main className="grow">
+      <>
+        <Hero />
+        <Zigzag />
+        <Testimonials />
+        <Newsletter />
+      </>
+    </main>
   );
 };
 

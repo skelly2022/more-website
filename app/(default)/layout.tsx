@@ -1,35 +1,30 @@
-"use client";
+import getCurrentUser from "../actions/getCurrentUser";
+import ChatWidget from "../components/ChatWidget";
+import ClientOnly from "../components/ClientOnly";
+import Footer from "../components/footer/footer";
+import LoginModal from "../components/modals/LoginModal";
+import RegisterModal from "../components/modals/RegisterModal";
+import Navbar from "../components/navbar/Navbar";
+import ToasterProvider from "../providers/ToasterProvider";
 
-import { useEffect } from "react";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-// import PageIllustration from '@/components/page-illustration'
-// import Footer from '@/components/ui/footer'
-
-export default function AosWrap({
+export default async function AosWrap({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: "phone",
-      duration: 600,
-      easing: "ease-out-sine",
-    });
-  });
+  const currentUser = await getCurrentUser();
 
   return (
     <>
-      <main className="grow">
-        {/* <PageIllustration /> */}
-
-        {children}
-      </main>
-
+      <ClientOnly>
+        <ToasterProvider />
+        <LoginModal />
+        <RegisterModal />
+        <Navbar currentUser={currentUser} />
+      </ClientOnly>
+      {/* <PageIllustration /> */}
+      {children}
+      <Footer />
       {/* <Footer /> */}
     </>
   );
