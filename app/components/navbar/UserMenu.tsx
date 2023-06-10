@@ -1,7 +1,7 @@
 "use client";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 import { signOut } from "next-auth/react";
@@ -32,15 +32,15 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
   const news = () => {
     router.push("/news");
-    toggleOpen()
+    toggleOpen();
   };
   const about = () => {
     router.push("/about");
-    toggleOpen()
+    toggleOpen();
   };
   const profile = () => {
     router.push("/dashboard");
-    toggleOpen()
+    toggleOpen();
   };
 
   const login = () => {
