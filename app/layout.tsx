@@ -47,7 +47,7 @@ export default async function RootLayout({
   const headersList = headers();
   const header_url = headersList.get("x-url") || "";
   console.log(header_url);
-  if (header_url === "http://localhost:3000/") {
+  if (header_url === "http://localhost:3000/" || "http://more.website") {
     return (
       <html lang="en">
         <body className={`${inter.variable} ${architects_daughter.variable}`}>
