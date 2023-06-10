@@ -18,7 +18,7 @@ const HomePage = () => {
     });
   });
   return (
-    <main className="grow">
+    <main className="grow font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
       <>
         <Hero />
         <Zigzag />
