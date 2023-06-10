@@ -35,14 +35,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const currentUser = await getCurrentUser();
-  const headersList = headers();
-  const header_url = headersList.get("x-url") || "";
-  console.log(header_url);
-  // if (
-  //   header_url === "http://localhost:3000/" ||
-  //   header_url === "https://more.website/"
-  // ) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${architects_daughter.variable}`}>
@@ -57,20 +49,3 @@ export default async function RootLayout({
     </html>
   );
 }
-//   if (
-//     header_url === "http://localhost:3000/dashboard" ||
-//     header_url === "https://more.website/dashboard"
-//   ) {
-//     return (
-//       <html lang="en">
-//         <body>
-//           <div className="w-screen h-screen">{children}</div>
-//         </body>
-//       </html>
-//     );
-//   }
-
-//   // return (
-
-//   // );
-// }

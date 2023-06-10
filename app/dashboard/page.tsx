@@ -1,17 +1,14 @@
 "use client";
-import Container from "../components/Container";
-import { Grid, Col, Card, Text, Metric } from "@tremor/react";
+
 import DashNav from "../components/dashboard/DashNav";
 import DashContent from "../components/dashboard/DashContent";
-import { useEffect, useMemo } from "react";
-import { useSearchParams } from "next/navigation";
+import getCurrentUser from "../actions/getCurrentUser";
 
-const Page = () => {
-  const params = useSearchParams();
+import { getServerSession } from "next-auth/next";
+import { redirect } from "next/navigation";
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
 
-  useEffect(() => {
-    console.log(params);
-  }, [params]);
+export default async function Page() {
   return (
     <div className="bg-gray-100 h-screen overflow-hidden relative lg:p-4">
       <div className="flex items-start">
@@ -20,6 +17,4 @@ const Page = () => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}
