@@ -68,7 +68,11 @@ export default async function RootLayout({
         </body>
       </html>
     );
-  } else {
+  }
+  if (
+    header_url === "http://localhost:3000/dashboard" ||
+    header_url === "https://more.website/dashboard"
+  ) {
     return (
       <html lang="en">
         <body>
