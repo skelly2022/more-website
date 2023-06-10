@@ -38,7 +38,7 @@ const RegisterModal = () => {
       .post("/api/register", data)
       .then(() => {
         toast.success("Account Created");
-        router.push("/dashboard");
+        router.refresh();
         registerModal.onClose();
       })
       .catch((error) => {
