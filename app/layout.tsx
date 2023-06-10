@@ -49,7 +49,7 @@ export default async function RootLayout({
   console.log(header_url);
   if (
     header_url === "http://localhost:3000/" ||
-    header_url === "more.website"
+    header_url === "http://more.website/"
   ) {
     return (
       <html lang="en">
