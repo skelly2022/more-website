@@ -8,7 +8,7 @@ import prisma from "@/app/libs/prismadb";
 
 export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
-  
+
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID as string,
@@ -33,7 +33,6 @@ export const authOptions: AuthOptions = {
             email: credentials.email,
           },
         });
-        console.log(user);
         if (!user || !user?.hashedPassword) {
           throw new Error("Invalid credentials");
         }

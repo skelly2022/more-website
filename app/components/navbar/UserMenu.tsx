@@ -56,13 +56,13 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
       <div className="flex flex-row items-center gap-3">
         <div
           onClick={about}
-          className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full bg-neutral-100 transition cursor-pointer text-black "
+          className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full bg-white transition cursor-pointer text-black  hover:bg-neutral-300 "
         >
           About
         </div>
         <div
           onClick={news}
-          className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full bg-neutral-100 transition cursor-pointer text-black "
+          className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full bg-white transition cursor-pointer text-black hover:bg-neutral-300 "
         >
           News
         </div>

@@ -50,7 +50,7 @@ const Hero = () => {
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-center pb-5">
             <h1 className="h1 mb-4" data-aos="fade-up">
               Less is MORE
             </h1>
