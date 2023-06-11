@@ -4,6 +4,7 @@ import ModalVideo from "./Modal-video";
 import bill from "@/public/images/bulldogbill.jpg";
 import Image from "next/image";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
+import Script from "next/script";
 
 const Hero = () => {
   return (
@@ -90,7 +91,7 @@ const Hero = () => {
               height={405}
               alt="Features 02"
             /> */}
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script>
             <div className="w-full mx-auto md:max-w-none h-auto flex items-center justify-center">
               <lottie-player
                 src="https://assets9.lottiefiles.com/packages/lf20_gv6ovc3h.json"

@@ -18,9 +18,9 @@ export default function Zigzag() {
             </div>
             <h1 className="h2 mb-4">One product, unlimited solutions</h1>
             <p className="text-xl text-gray-400">
-              At MORE, we're on a mission to reshape the real estate landscape.
+              At MORE, we&apos;re on a mission to reshape the real estate landscape.
               Originally standing for Members Only Real Estate, we realized that
-              our platform is much more than just an exclusive club; it's a
+              our platform is much more than just an exclusive club; it&apos;s a
               comprehensive solution for all your real estate needs.
             </p>
           </div>
