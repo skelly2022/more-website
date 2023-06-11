@@ -1,6 +1,9 @@
 "use client";
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from './Modal-video';
+import VideoThumb from "@/public/images/hero-image-01.jpg";
+import ModalVideo from "./Modal-video";
+import bill from "@/public/images/bulldogbill.jpg";
+import Image from "next/image";
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 const Hero = () => {
   return (
@@ -48,15 +51,17 @@ const Hero = () => {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Landing template for startups
+              Less is MORE
             </h1>
             <p
               className="text-xl text-gray-400 mb-8"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Our landing page template works on all devices, so you only have
-              to set it up once, and get beautiful results forever.
+              Less is more! Introducing an all-inclusive, data-driven real
+              estate platform exclusively designed for consumers. This platform
+              equips users with comprehensive tools for their real estate
+              transactions and property management requirements.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
@@ -64,7 +69,7 @@ const Hero = () => {
                   className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
                   href="#0"
                 >
-                  Start free trial
+                  Sign Up
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
@@ -77,8 +82,28 @@ const Hero = () => {
               </div>
             </div>
           </div>
+          <div>
+            {/* <Image
+              className="max-w-full mx-auto md:max-w-none h-auto"
+              src={bill}
+              width={540}
+              height={405}
+              alt="Features 02"
+            /> */}
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <div className="w-full mx-auto md:max-w-none h-auto flex items-center justify-center">
+              <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_gv6ovc3h.json"
+                background="transparent"
+                style={{ width: 600, height: 400 }}
+                autoplay
+                loop
+                mode="normal"
+              ></lottie-player>
+            </div>
+          </div>
 
-          <ModalVideo
+          {/* <ModalVideo
             thumb={VideoThumb}
             thumbWidth={1024}
             thumbHeight={576}
@@ -86,7 +111,7 @@ const Hero = () => {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080}
-          />
+          /> */}
         </div>
       </div>
     </section>

@@ -3,11 +3,15 @@
 import { MdSpaceDashboard } from "react-icons/md";
 import { BsHouseCheck } from "react-icons/bs";
 
-const DashNav = () => {
+interface DashNavProps {
+  show: boolean;
+}
+
+const DashNav: React.FC<DashNavProps> = ({ show }) => {
   return (
     <aside
-      className="bg-white h-screen overflow-y-auto top-0 lg:relative right-0 
-     hidden lg:block lg:w-64 lg:z-auto style_scrollbar__20XZQ z-10"
+      className={`bg-white h-screen overflow-y-auto top-0 lg:relative right-0 
+     hidden lg:block lg:w-64 lg:z-auto style_scrollbar__20XZQ z-10`}
     >
       <div className="pb-32 lg:pb-6">
         <div className="bg-white flex items-center justify-center pt-6 sticky top-0 pb-6 ">

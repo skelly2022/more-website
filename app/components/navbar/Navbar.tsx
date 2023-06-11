@@ -11,8 +11,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
-  const searchParams = useSearchParams();
-  console.log(searchParams);
+
   return (
     <div className="fixed w-full  bg-gray-900 z-10 shadow-sm">
       <div className="py-4 ">

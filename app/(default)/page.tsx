@@ -22,8 +22,8 @@ const HomePage = () => {
       <>
         <Hero />
         <Zigzag />
-        <Testimonials />
-        <Newsletter />
+        {/* <Testimonials /> */}
+        {/* <Newsletter /> */}
       </>
     </main>
   );
