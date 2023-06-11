@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+        <div className="relative pt-32 md:pt-40 ">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-5">
             <h1 className="h1 mb-4" data-aos="fade-up">
