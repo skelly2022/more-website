@@ -39,12 +39,12 @@ const MapBoxSearch: React.FC<MapBoxSearchProps> = ({
 
   return (
     <div
-      className="w-1/3 relative h-full"
+      className="w-auto relative h-full"
       onClick={() => {
         results.onOpen();
       }}
     >
-      <>
+      {/* <>
         <AddressAutofill
           options={{
             language: "en",
@@ -66,7 +66,7 @@ const MapBoxSearch: React.FC<MapBoxSearchProps> = ({
             id=""
           />
         </AddressAutofill>
-      </>
+      </> */}
 
       {/* </form> */}
     </div>
