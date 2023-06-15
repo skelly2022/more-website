@@ -51,11 +51,11 @@ const MapContainer: React.FC<MapProps> = ({ isOpen, location }) => {
         <div className="h-4/5 overflow-hidden relative">
           <Container>
             <div className="flex flex-row absolute top-6 left-9 z-10 h-9 gap-3 w-full">
-              <MapBoxSearch
+              {/* <MapBoxSearch
                 label={"Enter Address"}
                 latitude={viewState.latitude}
                 longitude={viewState.longitude}
-              />
+              /> */}
               <MapLayersButton />
             </div>
             {/* {results.isOpen && (
