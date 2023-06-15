@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import MobileNav from "../MobileDash";
 import Header from "../Header";
 import Content from "./Content";
-import Map from "../map/Map";
 import Houses from "../houses/Houses";
 import useSideBar from "@/app/hooks/useSideBar";
 import Calendar from "../calendar/Calendar";
 import Settings from "../settings/Settings";
 import { SafeUser } from "@/app/types";
+import MapContainer from "../../map/Map";
 
 const style = {
   open: "lg:w-full",
@@ -26,7 +26,6 @@ interface MainProps {
 const Main: React.FC<MainProps> = ({ currentUser }) => {
   const sideNavRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
-
   const sideBar = useSideBar();
 
   function handleClickOutside(event: any) {
@@ -54,7 +53,7 @@ const Main: React.FC<MainProps> = ({ currentUser }) => {
   }, []);
 
   return (
-    <div className=" h-screen overflow-hidden relative lg:p-4">
+    <div className={` h-screen overflow-hidden relative lg:p-4 bg-gray-100 `}>
       <div className="flex items-start">
         <>
           <div ref={sideNavRef}>
@@ -63,7 +62,8 @@ const Main: React.FC<MainProps> = ({ currentUser }) => {
 
           <div
             className={`${style.mainContainer} 
-          ${sideBar.isOpen ? style.open : style.close}`}
+          ${sideBar.isOpen ? style.open : style.close}
+          `}
           >
             <div ref={headerRef}>
               <Header
@@ -75,7 +75,9 @@ const Main: React.FC<MainProps> = ({ currentUser }) => {
             <div className="">
               {sideBar.page === "Dashboard" && <Content />}
               {sideBar.page === "Houses" && <Houses />}
-              {sideBar.page === "Map" && <Map isOpen={sideBar.isOpen} />}
+              {sideBar.page === "Map" && (
+                <MapContainer isOpen={sideBar.isOpen} location={location} />
+              )}
               {sideBar.page === "Calendar" && <Calendar />}
               {sideBar.page === "Settings" && <Settings />}
             </div>
