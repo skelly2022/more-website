@@ -44,29 +44,30 @@ const MapBoxSearch: React.FC<MapBoxSearchProps> = ({
         results.onOpen();
       }}
     >
-      {/* <form ref={formRef} className="flex flex--column"> */}
-      {/* Input form */}
-      <AddressAutofill
-        options={{
-          language: "en",
-          proximity: [longitude, latitude],
-        }}
-        accessToken={TOKEN!}
-        // onSuggest={onSuggest}
-        browserAutofillEnabled={false}
-        popoverOptions={{
-          placement: "top-start",
-          flip: true,
-          offset: 5,
-        }}
-      >
-        <input
-          className="w-full h-full rounded-lg pl-1"
-          placeholder="Start typing your address, e.g. 123 Main..."
-          // autoComplete="address-line1"
-          id=""
-        />
-      </AddressAutofill>
+      <>
+        <AddressAutofill
+          options={{
+            language: "en",
+            proximity: [longitude, latitude],
+          }}
+          accessToken={TOKEN!}
+          // onSuggest={onSuggest}
+          browserAutofillEnabled={false}
+          popoverOptions={{
+            placement: "top-start",
+            flip: true,
+            offset: 5,
+          }}
+        >
+          <input
+            className="w-full h-full rounded-lg pl-1"
+            placeholder="Start typing your address, e.g. 123 Main..."
+            // autoComplete="address-line1"
+            id=""
+          />
+        </AddressAutofill>
+      </>
+
       {/* </form> */}
     </div>
   );
