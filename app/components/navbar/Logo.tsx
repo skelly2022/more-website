@@ -7,15 +7,16 @@ const Logo = () => {
   const router = useRouter();
 
   return (
-    <h1 className="text-6xl text-red-500">more</h1>
-    // <Image
-    //   onClick={() => router.push("/")}
-    //   alt="Logo"
-    //   className="md:block cursor-pointer"
-    //   height="100"
-    //   width="100"
-    //   src="/images/logo.png"
-    // />
+    // <div className="h-20 relative">
+    <Image
+      onClick={() => router.push("/")}
+      alt="Logo"
+      className="md:block cursor-pointer"
+      height={150}
+      width={150}
+      src="/images/logov1bg.png"
+    />
+    // </div>
   );
 };
 

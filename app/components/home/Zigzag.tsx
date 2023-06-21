@@ -57,7 +57,7 @@ export default function Zigzag() {
                     and analysis. Gain a deep understanding of property values,
                     investment opportunities, and emerging markets.
                   </p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  {/* <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
                         className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
@@ -88,7 +88,7 @@ export default function Zigzag() {
                       </svg>
                       <span>Amet consectetur adipiscing elit</span>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function Zigzag() {
                     property searches, negotiations, documentation, and secure
                     transactions.
                   </p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  {/* <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
                         className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
@@ -155,7 +155,7 @@ export default function Zigzag() {
                       </svg>
                       <span>Amet consectetur adipiscing elit</span>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function Zigzag() {
                     receive personalized recommendations for maximizing your
                     returns.
                   </p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  {/* <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
                         className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
@@ -222,7 +222,7 @@ export default function Zigzag() {
                       </svg>
                       <span>Amet consectetur adipiscing elit</span>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function Zigzag() {
                     in discussions, seek advice, and tap into the collective
                     wisdom of our vibrant community.
                   </p>
-                  <ul className="text-lg text-gray-400 -mb-2">
+                  {/* <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
                         className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
@@ -289,7 +289,7 @@ export default function Zigzag() {
                       </svg>
                       <span>Amet consectetur adipiscing elit</span>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>

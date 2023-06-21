@@ -12,6 +12,7 @@ import { signOut } from "next-auth/react";
 import qs from "query-string";
 import NavItem from "./components/NavItem";
 import useSideBar from "@/app/hooks/useSideBar";
+import Logo from "../navbar/Logo";
 
 interface MobileNavProps {
   isOpen?: any;
@@ -58,9 +59,9 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
   ${isOpen ? style.open : style.close} `}
     >
       <div className="pb-32 lg:pb-6">
-        <h1 className="text-4xl text-red-500 flex justify-center items-center">
-          more
-        </h1>
+        <div className="w-full relative flex items-center justify-center">
+          <Logo />
+        </div>
         <ul>
           <li>
             {categories.map((item) => (
