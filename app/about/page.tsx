@@ -3,11 +3,11 @@ import Container from "../components/Container";
 
 const Page = () => {
   return (
-    <Container>
-      <div className="transition-opacity duration-500 ease-in-out opacity-0">
-        Hey About page
-      </div>
-    </Container>
+    <div className="pt-28 w-screen h-screen bg-gray-900">
+      <Container>
+        <h1 className="text-white">About</h1>
+      </Container>
+    </div>
   );
 };
 
