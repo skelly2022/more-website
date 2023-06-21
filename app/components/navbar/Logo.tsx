@@ -14,7 +14,7 @@ const Logo = () => {
       className="md:block cursor-pointer"
       height={150}
       width={150}
-      src="/images/logov1bg.png"
+      src="/images/logoOrange-More.png"
     />
     // </div>
   );
