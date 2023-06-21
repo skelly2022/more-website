@@ -32,11 +32,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
   const news = () => {
     router.push("/news");
-    toggleOpen();
+    // toggleOpen();
   };
   const about = () => {
     router.push("/about");
-    toggleOpen();
+    // toggleOpen();
   };
   const profile = () => {
     router.push("/dashboard");
