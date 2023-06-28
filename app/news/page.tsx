@@ -1,11 +1,10 @@
 import Container from "../components/Container";
+import Hero from "../components/university/Hero";
 
 const News = () => {
   return (
-    <div className="pt-28 w-screen h-screen bg-gray-900">
-      <Container>
-        <h1 className="text-white">News</h1>
-      </Container>
+    <div className="pt-28 h-auto bg-gray-900">
+      <Hero />
     </div>
   );
 };

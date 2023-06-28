@@ -60,12 +60,12 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
         >
           About
         </div>
-        <div
+        {/* <div
           onClick={news}
           className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full bg-white transition cursor-pointer text-black hover:bg-neutral-300 "
         >
           News
-        </div>
+        </div> */}
         <div
           className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rouned-full cursor-pointer hover:shadow-md transition text-white "
           onClick={toggleOpen}
@@ -82,7 +82,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             {currentUser ? (
               <>
                 <MenuItem onClick={profile} label="Dashboard" />
-                <MenuItem onClick={news} label="News" />
+                {/* <MenuItem onClick={news} label="News" /> */}
                 <MenuItem onClick={about} label="About" />
                 <MenuItem onClick={() => signOut()} label="Logout" />
               </>

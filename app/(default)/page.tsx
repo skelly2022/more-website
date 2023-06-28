@@ -6,6 +6,7 @@ import Hero from "../components/home/Hero";
 import Testimonials from "../components/home/Testimonials";
 import Zigzag from "../components/home/Zigzag";
 import Newsletter from "../components/home/Newsletter";
+import Map from "../components/home/Map";
 // import AosWrap from "../(default)/AosWrap";
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
     <main className="grow font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
       <>
         <Hero />
+        {/* <Map /> */}
         <Zigzag />
         {/* <Testimonials /> */}
         {/* <Newsletter /> */}

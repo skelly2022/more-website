@@ -59,10 +59,10 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Less is more! Introducing an all-inclusive, data-driven real
-              estate platform exclusively designed for consumers. This platform
-              equips users with comprehensive tools for their real estate
-              transactions and property management requirements.
+              Introducing an all-inclusive, data-driven real estate platform
+              exclusively designed for consumers. This platform equips users
+              with comprehensive tools for their real estate transactions and
+              property management requirements.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
