@@ -15,21 +15,21 @@ const data = [
   },
   {
     title: "Five ways digital artists make money online",
-    date: "6/22/2022",
+    date: "6/23/2022",
     message:
       "Every new technology has created new categories of art, and now artists have the most powerful artistic tools of all: the internet and integrated circuits. Together, they’ve made digital art possible, and increased by orders of magnitude the opportunities for artists to sell it. ",
     picture: FeatImage02,
   },
   {
     title: "Five ways digital artists make money online",
-    date: "6/22/2022",
+    date: "6/24/2022",
     message:
       "Every new technology has created new categories of art, and now artists have the most powerful artistic tools of all: the internet and integrated circuits. Together, they’ve made digital art possible, and increased by orders of magnitude the opportunities for artists to sell it. ",
     picture: FeatImage03,
   },
   {
     title: "Five ways digital artists make money online",
-    date: "6/22/2022",
+    date: "6/25/2022",
     message:
       "Every new technology has created new categories of art, and now artists have the most powerful artistic tools of all: the internet and integrated circuits. Together, they’ve made digital art possible, and increased by orders of magnitude the opportunities for artists to sell it. ",
     picture: FeatImage04,
@@ -42,7 +42,7 @@ const Hero = () => {
       <Container>
         <div className="flex flex-wrap">
           {data.map((news) => (
-            <div className="w-full lg:w-1/2 p-4">
+            <div className="w-full lg:w-1/2 p-4" key={news.date}>
               <div className="">
                 <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal h-">
                   <Image
